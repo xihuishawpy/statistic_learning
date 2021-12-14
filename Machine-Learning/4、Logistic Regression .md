@@ -4,7 +4,7 @@
  * @Autor: xihuishaw
  * @Date: 2021-12-14 00:06:59
  * @LastEditors: xihuishaw
- * @LastEditTime: 2021-12-15 00:09:33
+ * @LastEditTime: 2021-12-15 00:11:02
 -->
 
 # LR
@@ -59,7 +59,7 @@ Logistic分布是一种概率分布，其分布函数与密度函数如下：
 
 ![20211214232643](https://cdn.jsdelivr.net/gh/xihuishawpy/PicBad@main/blogs/pictures/20211214232643.png)
 
-随机梯度下降或牛顿法求解。
+随机梯度下降或牛顿法求解(略~)
 
 ## 正则化
 
