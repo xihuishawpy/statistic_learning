@@ -4,7 +4,7 @@
  * @Autor: xihuishaw
  * @Date: 2021-12-14 00:06:59
  * @LastEditors: xihuishaw
- * @LastEditTime: 2021-12-15 00:08:22
+ * @LastEditTime: 2021-12-15 00:09:33
 -->
 
 # LR
@@ -32,8 +32,11 @@ Logistic分布是一种概率分布，其分布函数与密度函数如下：
 ![20211214231100](https://cdn.jsdelivr.net/gh/xihuishawpy/PicBad@main/blogs/pictures/20211214231100.png)
 
 将回归函数表达为（y/(1-y) ，为几率）：
+
 ![20211214231208](https://cdn.jsdelivr.net/gh/xihuishawpy/PicBad@main/blogs/pictures/20211214231208.png)
+
 再次重写，回归函数可表达为`对数几率`：
+
 ![20211214231327](https://cdn.jsdelivr.net/gh/xihuishawpy/PicBad@main/blogs/pictures/20211214231327.png)
 
 逻辑回归的思路:
