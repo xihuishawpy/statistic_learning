@@ -4,7 +4,7 @@
  * @Autor: xihuishaw
  * @Date: 2022-01-07 23:42:54
  * @LastEditors: xihuishaw
- * @LastEditTime: 2022-01-08 01:29:51
+ * @LastEditTime: 2022-01-09 00:59:16
 -->
 
 # 决策树
@@ -64,3 +64,22 @@
 1. ID3 ：信息增益
 2. C4.5：信息增益比
 3. CART
+
+### CART
+
+CART,classification and regression tree,分类回归树，既可以用于分类也可以用于回归。
+
+CART采用的二叉树递归，每个非叶子节点都有2个分支。
+
+- 当CART是`分类树`的时候，采用`GINI值`作为分裂节点的依据；
+- 当CART作为`回归树`的时候，使用样本的`最小方差`作为分裂节点的依据。
+
+#### 1、回归树
+
+最小二乘法 回归树生成算法：
+
+选择某特征，将所有取值分为2类（分类有很多种，为1：n），计算2类对应的y的均值c，并计算2类取值的均方误差（yi-c)^2，遍历所有的分类情况，选择误差最小的切分情况。
+
+![20220109005231](https://cdn.jsdelivr.net/gh/xihuishawpy/PicBad@main/blogs/pictures/20220109005231.png)
+
+#### 2、分类树
