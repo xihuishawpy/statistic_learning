@@ -4,7 +4,7 @@
  * @Autor: xihuishaw
  * @Date: 2022-01-07 23:42:54
  * @LastEditors: xihuishaw
- * @LastEditTime: 2022-01-09 01:19:19
+ * @LastEditTime: 2022-01-09 01:23:08
 -->
 
 # 决策树
@@ -90,3 +90,4 @@ CART采用的二叉树递归，每个非叶子节点都有2个分支。
 
 1. <https://blog.csdn.net/gzj_1101/article/details/78355234>
 2. <https://www.cnblogs.com/keye/p/10564914.html>
+3. <https://zhuanlan.zhihu.com/p/85731206>
