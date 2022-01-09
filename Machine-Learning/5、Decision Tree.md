@@ -4,7 +4,7 @@
  * @Autor: xihuishaw
  * @Date: 2022-01-07 23:42:54
  * @LastEditors: xihuishaw
- * @LastEditTime: 2022-01-09 17:14:48
+ * @LastEditTime: 2022-01-09 17:17:58
 -->
 
 # 决策树
@@ -31,11 +31,11 @@
 
 也叫熵减， Entropy Decrease，[熵](https://zhuanlan.zhihu.com/p/26486223)是描述信息不确定状态的一种度量，值越大则越不稳定（事件发生的概率越低，所包含的信息量越大）。
 
-信息增益 = 父节点信息熵 - 按某特征分割后子节点信息熵（条件熵）
+信息增益 = 父节点信息熵 - 按某特征分割后子节点`条件熵`
 
 ![20220107235949](https://cdn.jsdelivr.net/gh/xihuishawpy/PicBad@main/blogs/pictures/20220107235949.png)
 
-其中，条件熵为：
+其中条件熵指的是，节点分裂之后带来了多少不确定性的降低或纯度的提高：
 
 ![20220109164713](https://cdn.jsdelivr.net/gh/xihuishawpy/PicBad@main/blogs/pictures/20220109164713.png)
 
