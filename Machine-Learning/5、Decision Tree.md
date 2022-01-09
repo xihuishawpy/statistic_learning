@@ -4,7 +4,7 @@
  * @Autor: xihuishaw
  * @Date: 2022-01-07 23:42:54
  * @LastEditors: xihuishaw
- * @LastEditTime: 2022-01-09 17:05:50
+ * @LastEditTime: 2022-01-09 17:14:48
 -->
 
 # 决策树
@@ -29,7 +29,7 @@
 
 ### 1、信息增益（Information Gain）
 
-也叫熵减， Entropy Decrease，[熵](https://zhuanlan.zhihu.com/p/26486223)是描述信息不确定状态的一种度量，值越大则越不稳定。
+也叫熵减， Entropy Decrease，[熵](https://zhuanlan.zhihu.com/p/26486223)是描述信息不确定状态的一种度量，值越大则越不稳定（事件发生的概率越低，所包含的信息量越大）。
 
 信息增益 = 父节点信息熵 - 按某特征分割后子节点信息熵（条件熵）
 
