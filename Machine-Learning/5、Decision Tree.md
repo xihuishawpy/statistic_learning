@@ -4,7 +4,7 @@
  * @Autor: xihuishaw
  * @Date: 2022-01-07 23:42:54
  * @LastEditors: xihuishaw
- * @LastEditTime: 2022-01-09 17:17:58
+ * @LastEditTime: 2022-01-09 17:19:22
 -->
 
 # 决策树
@@ -40,6 +40,8 @@
 ![20220109164713](https://cdn.jsdelivr.net/gh/xihuishawpy/PicBad@main/blogs/pictures/20220109164713.png)
 
 在每一个小类里面，都计算一个小熵，然后每一个小熵乘以各个类别的概率，然后求和。
+
+所以，信息增益代表随机变量的不确定性的平均减少量。
 
 举例：
 
