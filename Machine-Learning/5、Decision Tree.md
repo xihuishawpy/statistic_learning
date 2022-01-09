@@ -4,7 +4,7 @@
  * @Autor: xihuishaw
  * @Date: 2022-01-07 23:42:54
  * @LastEditors: xihuishaw
- * @LastEditTime: 2022-01-09 17:01:48
+ * @LastEditTime: 2022-01-09 17:05:50
 -->
 
 # 决策树
@@ -152,3 +152,4 @@ C(T)为预测误差，|T|为子树T的叶子节点数（代表树的复杂度）
 3. [【机器学习】决策树（上）——ID3、C4.5、CART](<https://zhuanlan.zhihu.com/p/85731206>)
 4. [通俗理解信息熵](https://zhuanlan.zhihu.com/p/26486223)
 5. [通俗理解条件熵](https://zhuanlan.zhihu.com/p/26551798)
+6. 《统计学习方法》
