@@ -4,7 +4,7 @@
  * @Autor: xihuishaw
  * @Date: 2022-01-07 23:42:54
  * @LastEditors: xihuishaw
- * @LastEditTime: 2022-01-09 01:23:08
+ * @LastEditTime: 2022-01-09 11:25:12
 -->
 
 # 决策树
@@ -82,7 +82,15 @@ CART采用的二叉树递归，每个非叶子节点都有2个分支。
 
 ![20220109005231](https://cdn.jsdelivr.net/gh/xihuishawpy/PicBad@main/blogs/pictures/20220109005231.png)
 
+示例:
+
+![20220109112049](https://cdn.jsdelivr.net/gh/xihuishawpy/PicBad@main/blogs/pictures/20220109112049.png)
+
 #### 2、分类树
+
+分类树是用`基尼指数`选择最优特征，同时决定该特征的最优二值切分点。<u>基尼系数越小，不纯度越低，特征越好。</u>
+
+![20220109112335](https://cdn.jsdelivr.net/gh/xihuishawpy/PicBad@main/blogs/pictures/20220109112335.png)
 
 ---
 
