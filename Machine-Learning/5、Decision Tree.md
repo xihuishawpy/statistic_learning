@@ -4,12 +4,14 @@
  * @Autor: xihuishaw
  * @Date: 2022-01-07 23:42:54
  * @LastEditors: xihuishaw
- * @LastEditTime: 2022-01-09 14:27:54
+ * @LastEditTime: 2022-01-09 16:51:02
 -->
 
 # 决策树
 
 决策树学习的本质是，**从训练数据集中归纳出一组分类规则**。
+
+决策树的思想是，用节点代表样本集合，通过某些判定条件来对节点内的样本进行分配，将它们划分到该节点下的子节点，并且要求各个子节点中类别的纯度之和应高于该节点中的类别纯度，从而起到分类效果。
 
 ## 构造决策树
 
@@ -27,11 +29,16 @@
 
 ### 1、信息增益（Information Gain）
 
-也叫熵减， Entropy Decrease，熵是描述信息不确定状态的一种度量，值越大则越不稳定。
+也叫熵减， Entropy Decrease，[熵](https://zhuanlan.zhihu.com/p/26486223)是描述信息不确定状态的一种度量，值越大则越不稳定。
 
 信息增益 = 父节点信息熵 - 按某特征分割后子节点信息熵（条件熵）
 
 ![20220107235949](https://cdn.jsdelivr.net/gh/xihuishawpy/PicBad@main/blogs/pictures/20220107235949.png)
+
+其中，条件熵为：
+
+在每一个小类里面，都计算一个小熵，然后每一个小熵乘以各个类别的概率，然后求和。
+![20220109164713](https://cdn.jsdelivr.net/gh/xihuishawpy/PicBad@main/blogs/pictures/20220109164713.png)
 
 举例：
 
@@ -120,20 +127,26 @@ C(T)为预测误差，|T|为子树T的叶子节点数（代表树的复杂度）
 ## 总结
 
 - 划分标准的差异
+
   ID3 使用信息增益偏向特征值多的特征，C4.5 使用信息增益率克服信息增益的缺点，偏向于特征值小的特征，CART 使用基尼指数克服 C4.5 需要求 log 的巨大计算量，偏向于特征值较多的特征。
 - 使用场景的差异
+  
   ID3 和 C4.5 都只能用于分类问题，CART 可以用于分类和回归问题；ID3 和 C4.5 是多叉树，速度较慢，CART 是二叉树，计算速度很快；
 - 样本数据的差异
+  
   ID3 只能处理离散数据且对缺失值敏感，C4.5 和 CART 可以处理连续性数据且有多种方式处理缺失值；从样本量考虑的话，小样本建议 C4.5、大样本建议 CART。C4.5 处理过程中需对数据集进行多次扫描排序，处理成本耗时较高，而 CART 本身是一种大样本的统计方法，小样本处理下泛化误差较大 ；
 - 样本特征的差异
+  
   ID3 和 C4.5 层级之间只使用一次特征，CART 可多次重复使用特征；
 - 剪枝策略的差异
+  
   ID3 没有剪枝策略，C4.5 是通过悲观剪枝策略来修正树的准确性，而 CART 是通过代价复杂度剪枝。
 
 ---
 
 参考：
 
-1. <https://blog.csdn.net/gzj_1101/article/details/78355234>
-2. <https://www.cnblogs.com/keye/p/10564914.html>
-3. <https://zhuanlan.zhihu.com/p/85731206>
+1. [CART算法的原理以及实现](<https://blog.csdn.net/gzj_1101/article/details/78355234>)
+2. [CART分类树](<https://www.cnblogs.com/keye/p/10564914.html>)
+3. [【机器学习】决策树（上）——ID3、C4.5、CART](<https://zhuanlan.zhihu.com/p/85731206>)
+4. [通俗理解条件熵](https://zhuanlan.zhihu.com/p/26551798)
