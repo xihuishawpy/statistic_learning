@@ -4,7 +4,7 @@
  * @Autor: xihuishaw
  * @Date: 2022-01-07 23:42:54
  * @LastEditors: xihuishaw
- * @LastEditTime: 2022-01-09 16:51:02
+ * @LastEditTime: 2022-01-09 16:54:50
 -->
 
 # 决策树
@@ -149,4 +149,5 @@ C(T)为预测误差，|T|为子树T的叶子节点数（代表树的复杂度）
 1. [CART算法的原理以及实现](<https://blog.csdn.net/gzj_1101/article/details/78355234>)
 2. [CART分类树](<https://www.cnblogs.com/keye/p/10564914.html>)
 3. [【机器学习】决策树（上）——ID3、C4.5、CART](<https://zhuanlan.zhihu.com/p/85731206>)
-4. [通俗理解条件熵](https://zhuanlan.zhihu.com/p/26551798)
+4. [通俗理解信息熵](https://zhuanlan.zhihu.com/p/26486223)
+5. [通俗理解条件熵](https://zhuanlan.zhihu.com/p/26551798)
