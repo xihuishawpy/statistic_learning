@@ -4,17 +4,17 @@ Version: 1.0
 Autor: xihuishaw
 Date: 2022-08-14 00:38:48
 LastEditors: xihuishaw
-LastEditTime: 2022-08-14 00:40:27
+LastEditTime: 2022-08-14 01:03:38
 '''
 
 # https://www.cnblogs.com/geo-will/p/10468401.html
 
+
 import numpy as np
 
 
-
 class NaiveBayes:
-
+    
     def fit(self,X,y):
         n_samples, n_features = X.shape
         self._classes = np.unique(y)
@@ -34,7 +34,6 @@ class NaiveBayes:
     def predict(self,X):
         y_pred = [self._predict(x) for x in X]
         return np.array(y_pred)
-
 
     def _predict(self , x):
         posteriors = []
