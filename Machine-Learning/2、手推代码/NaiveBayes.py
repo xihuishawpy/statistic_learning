@@ -4,14 +4,13 @@ Version: 1.0
 Autor: xihuishaw
 Date: 2022-08-14 00:38:48
 LastEditors: xihuishaw
-LastEditTime: 2022-08-14 01:06:56
+LastEditTime: 2022-08-14 01:08:42
 '''
 
 # https://www.cnblogs.com/geo-will/p/10468401.html
 
 
 import numpy as np
-
 
 class NaiveBayes:
     
@@ -51,12 +50,22 @@ class NaiveBayes:
 
     # 计算x相对于每个类的条件概率P(x|c)（正态分布）
     def _pdf(self,class_idx,x):
-        mean = self._mean(class_idx)
+        mean = self._mean[class_idx]
         var = self._var[class_idx]
         numerator = np.exp(-((x-mean)**2)/(2*var))
         denominator = np.sqrt(2*np.pi*var)
         return numerator / denominator
 
 
+
+from sklearn.datasets import load_iris
+
+if __name__ == '__main__':
+    X , y  = load_iris(return_X_y=True)
+    nb = NaiveBayes()
+    nb.fit(X,y)
+    y_pred = nb.predict(X)
+    acc = np.sum(y_pred==y) / len(y)
+    print(acc)
 
     
