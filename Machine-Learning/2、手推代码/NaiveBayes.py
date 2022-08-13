@@ -4,7 +4,7 @@ Version: 1.0
 Autor: xihuishaw
 Date: 2022-08-14 00:38:48
 LastEditors: xihuishaw
-LastEditTime: 2022-08-14 01:03:38
+LastEditTime: 2022-08-14 01:06:56
 '''
 
 # https://www.cnblogs.com/geo-will/p/10468401.html
@@ -49,7 +49,7 @@ class NaiveBayes:
         # 返回后验概率最大对应的类
         return self._classes[np.argmax(posteriors)]
 
-    # 计算x相对于每个类的条件概率（正态分布）
+    # 计算x相对于每个类的条件概率P(x|c)（正态分布）
     def _pdf(self,class_idx,x):
         mean = self._mean(class_idx)
         var = self._var[class_idx]
