@@ -4,7 +4,7 @@ Version: 1.0
 Autor: xihuishaw
 Date: 2022-08-15 10:12:26
 LastEditors: xihuishaw
-LastEditTime: 2022-08-15 10:35:06
+LastEditTime: 2022-08-15 10:37:52
 '''
 
 import numpy as np
@@ -22,6 +22,7 @@ class LogisticRegression:
     def fit(self, X , y):
         n_samples , n_features = X.shape
         
+        # 初始化参数
         self.weights = np.zeros(n_features)
         self.bias = 0
         
