@@ -4,7 +4,7 @@ Version: 1.0
 Autor: xihuishaw
 Date: 2022-08-17 00:23:09
 LastEditors: xihuishaw
-LastEditTime: 2022-08-17 00:49:53
+LastEditTime: 2022-08-17 00:51:29
 '''
 
 
@@ -23,9 +23,9 @@ class PCA:
         # 求协方差矩阵，并计算特征值与特征向量
         cov = np.cov(X.T)
         eigenvalues , eigenvectors = np.linalg.eig(cov)
+        eigenvectors = eigenvectors.T
 
         # 按特征值从大到小，特征向量依次排序
-        eigenvectors = eigenvectors.T
         idxs = np.argsort(eigenvalues)[::-1]
         eigenvalues = eigenvalues[idxs]
         eigenvectors = eigenvectors[idxs]
