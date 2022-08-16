@@ -1,10 +1,10 @@
 '''
-Description: 
+Description: KNN最近邻
 Version: 1.0
 Autor: xihuishaw
 Date: 2022-08-16 17:17:27
 LastEditors: xihuishaw
-LastEditTime: 2022-08-16 17:32:57
+LastEditTime: 2022-08-17 00:34:27
 '''
 
 from collections import Counter
