@@ -4,7 +4,7 @@ Version: 1.0
 Autor: xihuishaw
 Date: 2022-08-17 00:23:09
 LastEditors: xihuishaw
-LastEditTime: 2022-08-17 00:51:29
+LastEditTime: 2022-08-17 10:12:39
 '''
 
 
@@ -31,7 +31,7 @@ class PCA:
         eigenvectors = eigenvectors[idxs]
 
         # 取出前n_components个特征向量，组成【主成分】
-        self.components = eigenvectors[0:self.n_components]
+        self.components = eigenvectors[:self.n_components]
 
     def transform(self,X):
         # 原数据均值中心化后，再乘以主成分矩阵实现降维
